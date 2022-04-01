@@ -1,0 +1,58 @@
+<!DOCTYPE html5>
+
+<html>
+
+    <head>
+
+        <title>Face Recognizer</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        
+        <h1 id="heading">Face Recognizer</h1>
+
+        <br>
+
+        <h2 class="subHeadings">The model is trained to identify the following People:</h2>
+
+        <b id="people">Me<br><br>
+        Mother</b>
+
+        <br><br><br>
+
+        <h2 class="subHeadings">Live Webcam View:</h2>
+
+        <div id="camera"></div>
+
+        <br><br><br>
+
+        <button class="btns" onclick="takeSnapShot()">Capture Image</button>
+
+        <br><br><br>
+
+        <h2 class="subHeadings">Captured Image:</h2>
+
+        <div id="result"></div>
+
+        <br><br><b></b>
+
+        <button class="btns" onclick="identifyImg()">Identify Image</button>
+
+        <br><br><br>
+
+        <h2>Name: </h2> <h2 id="nameOfPerson"></h2>
+
+        <h2>Accuracy (Between 0 and 1): </h2> <h2 id="accuracy"></h2>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
